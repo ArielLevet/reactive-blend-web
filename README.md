@@ -1,3 +1,25 @@
+# Notas:
+## Arrancar server local con Jeckyll:
+En el directorio del proyecto (con jekyll):
+
+bundle exec jekyll serve
+
+Bundler: https://jekyllrb.com/tutorials/using-jekyll-with-bundler/
+
+## Editando:
+- Estilo: \assets\css\style.scss (default en: \_site\assets\css\style.css)
+- Páginas: index.md, etc. (en raiz del proyecto)
+- HTML Contenedor: \_layouts\default.html
+
+## Antes de publicar:
+No olvidar revisar:
+- sitemap.xml
+- head-custom-google-analytics.html
+- Ajustar DNS
+
+---
+---
+
 Agency Jekyll theme
 ====================
 
