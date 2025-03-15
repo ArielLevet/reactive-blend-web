@@ -4,11 +4,9 @@ En el directorio del proyecto (con jekyll):
 
 jekyll serve
 
-# REVISANDO:
 ## Editando:
-- Estilo: \assets\css\style.scss (default en: \_site\assets\css\style.css)
-- Páginas: index.md, etc. (en raiz del proyecto)
-- HTML Contenedor: \_layouts\default.html
+- Estilo: \_site\style.css
+- Contenido: en \_includes
 
 ## Antes de publicar:
 No olvidar revisar:
