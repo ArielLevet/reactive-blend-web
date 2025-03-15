@@ -2,10 +2,9 @@
 ## Arrancar server local con Jeckyll:
 En el directorio del proyecto (con jekyll):
 
-bundle exec jekyll serve
+jekyll serve
 
-Bundler: https://jekyllrb.com/tutorials/using-jekyll-with-bundler/
-
+# REVISANDO:
 ## Editando:
 - Estilo: \assets\css\style.scss (default en: \_site\assets\css\style.css)
 - Páginas: index.md, etc. (en raiz del proyecto)
