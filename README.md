@@ -5,7 +5,7 @@ En el directorio del proyecto (con jekyll):
 jekyll serve
 
 ## Editando:
-- Estilo: \_site\style.css
+- Estilo: style.css en carpeta raiz (plantilla en: \_site\style.css)
 - Contenido: en \_includes
 
 ## Antes de publicar:
