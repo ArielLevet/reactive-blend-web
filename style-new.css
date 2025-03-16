@@ -137,7 +137,7 @@
      padding: 20px 40px;
      border-color: var(--primary-color);
      border-radius: 3px;
-     text-transform: uppercase;
+     text-transform: none;
      font-family: Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
      font-size: 18px;
      font-weight: 700;
@@ -309,9 +309,9 @@
  
  header .intro-text .intro-heading {
      margin-bottom: 25px;
-     text-transform: uppercase;
-     font-family: Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
-     font-size: 50px;
+     text-transform: none;
+     font-family: "Edu VIC WA NT Beginner", "Helvetica Neue",Helvetica,Arial,sans-serif;
+     font-size: 60px;
      font-weight: 700;
      line-height: 50px;
  }
@@ -332,9 +332,9 @@
  
      header .intro-text .intro-heading {
          margin-bottom: 50px;
-         text-transform: uppercase;
-         font-family: Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
-         font-size: 75px;
+         text-transform: none;
+         font-family: "Edu VIC WA NT Beginner", "Helvetica Neue",Helvetica,Arial,sans-serif; /*acá*/
+         font-size: 110px;
          font-weight: 700;
          line-height: 75px;
      }
