@@ -5,11 +5,12 @@ En el directorio del proyecto (con jekyll):
 jekyll serve
 
 ## Editando:
-- Estilo: style.css en carpeta raiz (plantilla en: \_site\style.css)
+- Estilo: style-new.css en carpeta raiz
 - Contenido: en \_includes
 
 ## Antes de publicar:
 No olvidar revisar:
+- _config.yml
 - sitemap.xml
 - head-custom-google-analytics.html
 - Ajustar DNS
