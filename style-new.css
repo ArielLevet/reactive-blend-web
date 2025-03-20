@@ -186,6 +186,17 @@
      background-color: #fff;
  }
  
+ .logo {
+	height: 37px; /*Se ajusta en full*/
+	margin-right: 12px;
+	margin-top: 5px;
+    display: flex;
+	justify-content: center;
+    -webkit-transition: height .3s, margin-right .3s, margin-top .3s;
+    -moz-transition: height .3s, margin-right .3s, margin-top .3s;
+    transition: height .3s, margin-right .3s, margin-top .3s;
+ }
+
  .navbar-default {
      border-color: transparent;
      background-color: #222;
@@ -194,6 +205,8 @@
  .navbar-default .navbar-brand {
      font-family: "Edu VIC WA NT Beginner","Helvetica Neue",Helvetica,Arial,cursive;
      color: #ffffff;
+     display: flex;
+     align-items: center;
      /*text-shadow: 
             1px 1px 2px rgba(0,0,0,0.8),
             -1px -1px 2px rgba(0,0,0,0.8),
@@ -256,13 +269,18 @@
  }
  
  @media(min-width:768px) {
+
+     .logo {
+        height: 45px;
+     }
+
      .navbar-default {
-         padding: 25px 0;
+         padding: 10px 0;
          border: 0;
-         background-color: transparent;
-         -webkit-transition: padding .3s;
-         -moz-transition: padding .3s;
-         transition: padding .3s;
+         background-color: #222222a3;
+         -webkit-transition: all .3s;
+         -moz-transition: all .3s;
+         transition: all .3s;
      }
  
      .navbar-default .navbar-brand {
@@ -277,10 +295,17 @@
      }
  
      .navbar-default.navbar-shrink {
-         padding: 10px 0;
+         padding: 7px 0;
          background-color: #222;
      }
- 
+     .navbar-default.navbar-shrink .logo {
+        height: 37px;
+        margin-right: 10px;
+        margin-top: 3px;
+        -webkit-transition: height .3s, margin-right .3s, margin-top .3s;
+        -moz-transition: height .3s, margin-right .3s, margin-top .3s;
+        transition: height .3s, margin-right .3s, margin-top .3s;
+     }
      .navbar-default.navbar-shrink .navbar-brand {
          font-size: 1.5em;
      }
@@ -376,11 +401,38 @@
      }
  }
  
- .service-heading {
+ .game-heading {
      margin: 15px 0;
      text-transform: none;
  }
  
+ .full-width-banner {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px; /* Espacio entre la imagen y la galería */
+}
+
+ .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
  #portfolio .portfolio-item {
      right: 0;
      margin: 0 0 15px;
