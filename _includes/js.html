@@ -5,13 +5,19 @@
 
     <script>
       window.addEventListener("orientationchange", function () {
-         setTimeout(function () {
-            var lightboxImage = document.querySelector(".lb-image");
-            if (lightboxImage) {
-               lightboxImage.style.maxWidth = "100%";
-               /*lightboxImage.style.maxHeight = "100%";*/
-            }
-         }, 300);
+	   lightbox.end();
+
+	   setTimeout(function () {
+		   document.querySelectorAll(".lightbox").forEach((el) => {
+			el.removeAttribute("data-lightbox");
+		   });
+
+		   document.querySelectorAll("a[href$='.jpg'], a[href$='.png'], a[href$='.gif']").forEach((el) => {
+			el.setAttribute("data-lightbox", "gallery");
+		   });
+
+		   lightbox.init();
+	      }, 500);
       });
     </script>
 
