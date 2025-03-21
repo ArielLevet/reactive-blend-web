@@ -3,24 +3,6 @@
     <!-- Lightbox plus jquery -->
     <script src="js/lightbox-plus-jquery.min.js"></script>
 
-    <script>
-      window.addEventListener("orientationchange", function () {
-	   lightbox.end();
-
-	   setTimeout(function () {
-		   document.querySelectorAll(".lightbox").forEach((el) => {
-			el.removeAttribute("data-lightbox");
-		   });
-
-		   document.querySelectorAll("a[href$='.jpg'], a[href$='.png'], a[href$='.gif']").forEach((el) => {
-			el.setAttribute("data-lightbox", "gallery");
-		   });
-
-		   lightbox.init();
-	      }, 500);
-      });
-    </script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
 
