@@ -27,11 +27,38 @@
      position: relative;
  }
 
- .lightboxOverlay {
-	width: 100vw !important;
-	height: 100vh !important;
-	position: fixed !important;
+ /* Ocultar el botón de cierre */
+ .lb-close {
+    display: none !important;
  }
+
+ /* Ocultar las etiquetas de título y descripción */
+ .lb-caption {
+    display: none !important;
+ }
+
+ /* Ocultar el texto "image X of Y" */
+ .lb-number {
+    display: none !important;
+ }
+
+ /* Estilo para la capa de fondo de Lightbox (Overlay) */
+ .lightboxOverlay {
+    width: 100vw !important;
+    height: 100vh !important;
+    position: fixed !important;
+ }
+
+ /* Centrar el Lightbox usando position fixed */
+ .lb-outerContainer {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    display: block !important; /* Asegura que el contenedor se muestre como bloque */
+    z-index: 9999; /* Coloca el Lightbox sobre otros elementos */
+ }
+
  
  .text-muted {
      color: #777;
