@@ -3,6 +3,18 @@
     <!-- Lightbox plus jquery -->
     <script src="js/lightbox-plus-jquery.min.js"></script>
 
+    <script>
+      window.addEventListener("orientationchange", function () {
+         setTimeout(function () {
+            var lightboxImage = document.querySelector(".lb-image");
+            if (lightboxImage) {
+               lightboxImage.style.maxWidth = "100%";
+               /*lightboxImage.style.maxHeight = "100%";*/
+            }
+         }, 300);
+      });
+    </script>
+
     <!-- Bootstrap Core JavaScript -->
     <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
 
