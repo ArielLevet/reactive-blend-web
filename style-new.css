@@ -20,9 +20,11 @@
 
 
  body {
-     overflow-x: hidden;
+     width: 100% !important;
+     overflow-x: hidden !important;
      font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
      color: #333;
+     position: relative;
  }
  
  .text-muted {
