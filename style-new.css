@@ -20,9 +20,17 @@
 
 
  body {
-     overflow-x: hidden;
+     width: 100% !important;
+     overflow-x: hidden !important;
      font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
      color: #333;
+     position: relative;
+ }
+
+ .lightboxOverlay {
+	width: 100vw !important;
+	height: 100vh !important;
+	position: fixed !important;
  }
  
  .text-muted {
