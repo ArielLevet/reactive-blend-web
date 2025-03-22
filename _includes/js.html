@@ -8,24 +8,6 @@
         'alwaysShowNavOnTouchDevices': true,
         'disableScrolling': true
       })
-
-
-      function ajustarAlturaLightbox() {
-        let alturaReal = window.innerHeight; // Altura real sin la barra de direcciones
-        document.querySelector(".lb-container").style.height = alturaReal + "px";
-        document.querySelector(".lb-image").style.maxHeight = alturaReal + "px";
-      }
-      document.addEventListener("DOMContentLoaded", function () {
-        ajustarAlturaLightbox();
-        window.addEventListener("resize", ajustarAlturaLightbox);
-      });
-
-      
-      window.addEventListener("orientationchange", function () {
-        if (window.lightbox) {
-        window.lightbox.end(); // Cierra Lightbox 2
-        }
-      });
     </script>
 
     <!-- Bootstrap Core JavaScript -->
