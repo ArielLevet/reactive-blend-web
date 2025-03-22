@@ -435,14 +435,16 @@
          padding: 150px 0;
      }
  }
- 
+
  .game-heading {
      margin: 15px 0;
      text-transform: none;
  }
  
  .full-width-banner {
-    width: 100%;
+    width: 100vw;
+    margin-left: 50%; /* Centra la imagen con respecto al contenedor */
+    transform: translateX(-50%); /* Ajusta la imagen para que se desplace hacia la izquierda */
     height: auto;
     display: block;
     margin-bottom: 20px; /* Espacio entre la imagen y la galería */
