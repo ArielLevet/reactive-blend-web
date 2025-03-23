@@ -1,0 +1,52 @@
+<!-- News Section -->
+<section id="news" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Latest News</h2>
+                <h3 class="section-subheading text-muted">Reactive news!</h3>
+            </div>
+        </div>
+        <div id="news-container" class="row">
+            <!-- Aquí se insertarán las noticias dinámicamente -->
+        </div>
+    </div>
+</section>
+
+<script>
+    // JSON con las noticias integrado directamente en el HTML
+    const news = [
+        {
+            "date": "July 2014",
+            "title": "Esta es la noticia más reciente",
+            "image": "img/news1.png",
+            "text": "La evolución de las artes decorativas ha ido de la mano con la historia del arte. Estas artes combinan funcionalidad y estética, siendo esenciales en la arquitectura y la decoración."
+        },
+        {
+            "date": "March 2014",
+            "title": "Esta es la penúltima noticia",
+            "image": "img/news2.png",
+            "text": "Las artes decorativas incluyen técnicas como cerámica, mosaico, ebanistería y orfebrería. A menudo se combinan con la arquitectura y otras artes visuales."
+        },
+        {
+            "date": "January 2014",
+            "title": "Esta es la noticia más vieja",
+            "image": "img/news3.jpg",
+            "text": "Desde la antigüedad, las artes decorativas han sido clave en la cultura. Desde el arte bizantino hasta la cerámica griega, han definido periodos históricos."
+        }
+    ];
+
+    // Insertar las noticias en el DOM
+    const container = document.getElementById("news-container");
+    news.forEach(item => {
+        const newsHTML = `
+		<div class="col-md-4">
+			<h4>${item.date}</h4>
+			<h3 class="subheading">${item.title}</h3>
+			<img src="${item.image}" alt="${item.title}" class="news-img mb-3">
+			<p class="news-text text-muted">${item.text}</p>
+		</div>
+	`;
+        container.innerHTML += newsHTML;
+    });
+</script>
