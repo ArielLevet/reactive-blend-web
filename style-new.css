@@ -242,7 +242,8 @@
  }
 
  .navbar-default .navbar-brand {
-     font-family: "Edu VIC WA NT Beginner", "Helvetica Neue", Helvetica, Arial, cursive;
+     font-family: "Cabin Condensed", "Helvetica Neue", Helvetica, Arial, cursive;
+     font-weight: 400;
      color: #ffffff;
      display: flex;
      align-items: center;
@@ -310,13 +311,13 @@
  @media(min-width:768px) {
 
      .logo {
-         height: 50px;
+         height: 51px;
      }
 
      .navbar-default {
          padding: 10px 0;
          border: 0;
-         background-color: #222222a5;
+         background-color: #1e1e1ea5;
          -webkit-transition: all .3s;
          -moz-transition: all .3s;
          transition: all .3s;
@@ -324,6 +325,7 @@
 
      .navbar-default .navbar-brand {
          font-size: 2em;
+         font-weight: 400;
          -webkit-transition: all .3s;
          -moz-transition: all .3s;
          transition: all .3s;
@@ -349,6 +351,7 @@
 
      .navbar-default.navbar-shrink .navbar-brand {
          font-size: 1.5em;
+         font-weight: 400;
      }
  }
 
@@ -374,8 +377,8 @@
  header .intro-text .intro-lead-in {
      margin-bottom: 25px;
      font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-     font-size: 22px;
      font-style: italic;
+     font-size: 22px;
      line-height: 22px;
      /*text-shadow: 
             2px 2px 4px rgba(0,0,0,0.8),
@@ -387,9 +390,10 @@
  header .intro-text .intro-heading {
      margin-bottom: 25px;
      text-transform: none;
-     font-family: "Edu VIC WA NT Beginner", "Helvetica Neue", Helvetica, Arial, sans-serif;
-     font-size: 56px;
-     font-weight: 700;
+     font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-style: normal;
+     font-size: 54px;
+     font-weight: 500;
      line-height: 50px;
  }
 
@@ -403,18 +407,19 @@
      header .intro-text .intro-lead-in {
          margin-bottom: 25px;
          font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-         font-size: 40px;
          font-style: italic;
+         font-size: 40px;
          line-height: 40px;
      }
 
      header .intro-text .intro-heading {
          margin-bottom: 50px;
          text-transform: none;
-         font-family: "Edu VIC WA NT Beginner", "Helvetica Neue", Helvetica, Arial, sans-serif;
+         font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+         font-style: normal;
          /*acá*/
-         font-size: 105px;
-         font-weight: 700;
+         font-size: 100px;
+         font-weight: 500;
          line-height: 75px;
      }
  }
