@@ -1,0 +1,53 @@
+<!-- Team Section -->
+    <section id="studio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Studio</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3 class="subheading">About Reactive Blend</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <p class="text-muted">
+                        En un rincón donde la creatividad y la tecnología convergen, Nova Pixel Studios se ha consolidado como un estudio de videojuegos independiente con una visión clara: contar historias envolventes a través de mecánicas innovadoras. Fundado por un grupo de desarrolladores apasionados, el estudio ha apostado por experiencias que combinan arte, música y diseño de juego en armonía. Con un enfoque en la calidad y la originalidad, cada uno de sus títulos busca sorprender a los jugadores y sumergirlos en mundos donde cada decisión cuenta.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <p class="text-muted">
+                        Desde su primer lanzamiento, Nova Pixel Studios ha crecido tanto en equipo como en ambición, explorando géneros diversos y plataformas emergentes. Su proceso de desarrollo se basa en la colaboración y en el perfeccionamiento constante, adaptándose a las tendencias sin perder su esencia creativa. Con proyectos en desarrollo y una comunidad de seguidores en expansión, el estudio sigue forjando su identidad en la industria, demostrando que la pasión y la innovación son las claves para dejar huella en el mundo del gaming.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3 class="subheading">Team members</h3>
+                </div>
+            </div>
+            <div class="row">
+                {% for member in site.people %}
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
+                        <h4>{{ member.name }}</h4>
+                        <p class="text-muted">{{ member.position }}</p>
+                        <ul class="list-inline social-buttons">
+                            {% for network in member.social %}
+                            <li>
+                                <a href="{{ network.url }}">
+                                    <i class="fa fa-{{ network.title }}"></i>
+                                </a>
+                            </li>
+                            {% endfor %}
+
+                        </ul>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>

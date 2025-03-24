@@ -63,7 +63,7 @@
 
 
  .text-muted {
-     color: #777;
+     color: #606060;
  }
 
  .text-primary {
@@ -797,7 +797,7 @@
 
  section#contact {
      background-color: #222;
-     background-image: url('/agency-jekyll-theme//img/map-image.png');
+     background-image: url('img/map-image.png');
      background-position: center;
      background-repeat: no-repeat;
  }
