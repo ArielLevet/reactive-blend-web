@@ -310,13 +310,13 @@
  @media(min-width:768px) {
 
      .logo {
-         height: 45px;
+         height: 50px;
      }
 
      .navbar-default {
          padding: 10px 0;
          border: 0;
-         background-color: #222222a3;
+         background-color: #222222c2;
          -webkit-transition: all .3s;
          -moz-transition: all .3s;
          transition: all .3s;
