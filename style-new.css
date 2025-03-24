@@ -316,7 +316,7 @@
      .navbar-default {
          padding: 10px 0;
          border: 0;
-         background-color: #222222a3; /*bar color*/
+         background-color: #222222a5;
          -webkit-transition: all .3s;
          -moz-transition: all .3s;
          transition: all .3s;
