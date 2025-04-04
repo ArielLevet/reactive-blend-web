@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html>
+  {% if site.under_construction %}
+  <script>
+    // Verificar autenticación
+    if (sessionStorage.getItem('devAuth') !== 'true' && 
+        window.location.pathname !== '{{ "/under_construction.html" | relative_url }}') {
+      window.location.href = "{{ '/under_construction.html' | relative_url }}";
+    }
+  </script>
+  {% endif %}
 
   {% include head.html %}
 
