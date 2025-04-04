@@ -1,6 +1,10 @@
 baseurl: ""
 url: "https://reactiveblend.com"
 
+# Configuración de desarrollo
+dev_password: "pass1983"  # Cambiar esto
+under_construction: true      # Cambiar a false cuando quieras desactivarlo
+
 # Site settings
 title: Reactive Blend Studio
 email: your-email@domain.com

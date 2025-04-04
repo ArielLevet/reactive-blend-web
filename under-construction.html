@@ -1,0 +1,80 @@
+---
+layout: null  # Esto evita que busque un layout
+sitemap: false
+permalink: /under_construction.html
+---
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Under Construction</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .construction-box {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+    }
+    input {
+      padding: 0.5rem;
+      margin: 1rem 0;
+      width: 80%;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .error {
+      color: red;
+      margin-top: 1rem;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="construction-box">
+    <h1>🚧 Under Construction</h1>
+    <p>reactiveblend.com development in progress.</p>
+    <p>Dev password:</p>
+    <input type="password" id="devPass" placeholder="Enter password">
+    <button onclick="checkPass()">Enter</button>
+    <p id="error" class="error">Incorrect password</p>
+  </div>
+
+  <script>
+    function checkPass() {
+      const correctPass = "{{ site.dev_password }}";
+      const enteredPass = document.getElementById('devPass').value;
+      
+      if (enteredPass === correctPass) {
+        sessionStorage.setItem('devAuth', 'true');
+        window.location.href = "{{ '/' | relative_url }}";
+      } else {
+        document.getElementById('error').style.display = 'block';
+      }
+    }
+    
+    document.getElementById('devPass').addEventListener('keyup', function(e) {
+      if (e.key === 'Enter') checkPass();
+    });
+  </script>
+</body>
+</html>
