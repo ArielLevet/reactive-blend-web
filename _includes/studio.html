@@ -1,53 +1,79 @@
 <!-- Team Section -->
-    <section id="studio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Studio</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3 class="subheading">About Reactive Blend</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <p class="text-muted">
-                        En un rincón donde la creatividad y la tecnología convergen, Nova Pixel Studios se ha consolidado como un estudio de videojuegos independiente con una visión clara: contar historias envolventes a través de mecánicas innovadoras. Fundado por un grupo de desarrolladores apasionados, el estudio ha apostado por experiencias que combinan arte, música y diseño de juego en armonía. Con un enfoque en la calidad y la originalidad, cada uno de sus títulos busca sorprender a los jugadores y sumergirlos en mundos donde cada decisión cuenta.
-                    </p>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <p class="text-muted">
-                        Desde su primer lanzamiento, Nova Pixel Studios ha crecido tanto en equipo como en ambición, explorando géneros diversos y plataformas emergentes. Su proceso de desarrollo se basa en la colaboración y en el perfeccionamiento constante, adaptándose a las tendencias sin perder su esencia creativa. Con proyectos en desarrollo y una comunidad de seguidores en expansión, el estudio sigue forjando su identidad en la industria, demostrando que la pasión y la innovación son las claves para dejar huella en el mundo del gaming.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3 class="subheading" style="padding-top: 20px;">Team members</h3>
-                </div>
-            </div>
-            <div class="row">
-                {% for member in site.people %}
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
-                        <h4>{{ member.name }}</h4>
-                        <p class="text-muted">{{ member.position }}</p>
-                        <ul class="list-inline social-buttons">
-                            {% for network in member.social %}
-                            <li>
-                                <a href="{{ network.url }}">
-                                    <i class="fa fa-{{ network.title }}"></i>
-                                </a>
-                            </li>
-                            {% endfor %}
-
-                        </ul>
-                    </div>
-                </div>
-                {% endfor %}
+<section id="studio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Studio</h2>
             </div>
         </div>
-    </section>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h3 class="subheading" style="padding-bottom: 20px;">About Reactive Blend</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                Founded in 2025 by <strong>Ariel Aguilar</strong> and <strong>Martín Ibarra</strong>, Reactive Blend is
+                a game studio born in Rosario, Argentina, where creativity meets retro-modern magic. We're not just
+                developers—we're a dynamic duo of multi-discipline creators.<br><br>
+
+                Ariel mixes code with music and sound design, while Martín dual-wields programming and artistry,
+                crafting 2D/3D worlds with pixel-perfect charm—proving that in our studio, even the code has a creative
+                heartbeat.<br><br>
+
+                <h4 class="subheading">What Makes Us Unique?</h4>
+                <strong>Hybrid Mechanics, Retro Soul:</strong> We blend nostalgic aesthetics with modern tools, crafting
+                games that feel like a warm hug from the past—with a fresh, tech-savvy twist.<br><br>
+
+                <strong>Narrative Adventures:</strong> Our passion lies in storytelling, wrapped in indie-sized packages
+                with big imagination.<br><br>
+
+                <strong>Collaboration Over Chaos:</strong> We let ideas bounce around freely to catch those 'wow'
+                collisions that shape-shift into unique <strong>Reactive-Blend adventures</strong>.<br><br>
+            </div>
+            <div class="col-12 col-lg-6">
+                <h4 class="subheading">For Players Who Crave More</h4>
+                We design for curious minds hungry for fresh twists. Think of our games as a love letter to the past,
+                rewritten with modern ink—retro vibes, hybrid gameplay, and stories that stick with you.<br><br>
+
+                <h4 class="subheading">Behind the Scenes</h4>
+                <strong>Tools of the Trade:</strong> Blender, Godot, C#, and Reaper fuel our alchemy.<br><br>
+
+                <strong>Workflow Philosophy:</strong> No rushing here! We let ideas simmer, ensuring every project is a
+                labor of love.<br><br>
+
+
+                <h4 class="subheading">Join the blend</h4>
+                While we're busy brewing our debut title (<em>stay tuned!</em>), we're excited to connect with players
+                who value innovation and bold ideas. Follow our journey and let's redefine what games can be—one
+                experiment at a time.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h3 class="subheading" style="padding-top: 55px;">Team members</h3>
+            </div>
+        </div>
+        <div class="row">
+            {% for member in site.people %}
+            <div class="col-sm-4">
+                <div class="team-member">
+                    <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
+                    <h4>{{ member.name }}</h4>
+                    <p class="text-muted">{{ member.position }}</p>
+                    <ul class="list-inline social-buttons">
+                        {% for network in member.social %}
+                        <li>
+                            <a href="{{ network.url }}">
+                                <i class="fa fa-{{ network.title }}"></i>
+                            </a>
+                        </li>
+                        {% endfor %}
+
+                    </ul>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
