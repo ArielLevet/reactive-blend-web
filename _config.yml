@@ -7,57 +7,40 @@ under_construction: true      # Cambiar a false cuando quieras desactivarlo
 
 # Site settings
 title: Reactive Blend Studio
-email: your-email@domain.com
+email: ariel.bnd@gmail.com
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 
 
 # Team names, titles and social links
 people:
-- name: Kay Garland
+- name: Ariel Aguilar
   pic: 1
-  position: Lead Designer
+  position: "Sfx-Music / Programmer"
   social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: stack-overflow
-      url: #
+  - title: x-twitter
+    url: http://www.x.com/levetdev
+  - title: instagram 
+    url: http://www.instagram.com/ariel.bnd
+  - title: envelope
+    url: mailto:ariel.bnd@gmail.com
 
-- name: Larry Parker
+- name: Marrtín Ibarra
   pic: 2
-  position: Lead Marketer
+  position: "2D-3D Artist / Programmer"
   social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
-
-- name: Diana Petersen
-  pic: 3
-  position: Lead Developer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: google-plus
-      url: #
+    - title: envelope
+      url: mailto:contact@reactiveblend.com
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: x-twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket 
-    url: http://bitbucket.org/jekyll
-  - title: github
-    url: http://github.com/jekyll
+    url: http://www.x.com/reactiveblend
+  - title: tiktok
+    url: http://www.tiktok.com/@reactiveblend
+  - title: instagram 
+    url: http://www.instagram.com/reactiveblend
+  - title: envelope
+    url: mailto:contact@reactiveblend.com
 
 # Postal address (add as many lines as necessary)
 address:
