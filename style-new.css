@@ -63,7 +63,11 @@
 
 
  .text-muted {
-     color: #606060;
+     color: #545454;
+ }
+
+ .text-white {
+    color:#ffffff
  }
 
  .text-primary {
@@ -71,12 +75,18 @@
  }
 
  p {
-     font-size: 14px;
+     font-size: 15px;
      line-height: 1.75;
  }
 
  p.large {
      font-size: 16px;
+ }
+
+ @media(min-width:768px) {
+    p {
+        font-size: 16px;
+    }
  }
 
  a,
@@ -811,6 +821,36 @@
      color: #fff;
  }
 
+ section#contact .contact-text {
+    
+    margin-bottom: 10px;
+    text-transform: none;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    font-style: normal;
+ }
+
+ @media(min-width:767px) {
+    section#contact .contact-text {
+        font-size: 17px;;
+    }
+}
+
+ section#contact .text-muted {
+    color: #e3e3e3;
+ }
+
+ .highlighted-mail {
+	background-color: #222;
+	color: var(--primary-color);
+    font-weight: 600;
+	padding: 1px 3px;
+	border-radius: 3px;
+    font-style: normal;
+ }
+
  section#contact .form-group {
      margin-bottom: 25px;
  }
@@ -909,6 +949,17 @@
  ul.social-buttons li a:active {
      background-color: var(--primary-color);
  }
+
+ section#contact ul.social-buttons li a {
+    margin-top: 20px;
+    background-color: var(--primary-color);
+}
+
+section#contact ul.social-buttons li a:hover,
+section#contact ul.social-buttons li a:focus,
+section#contact ul.social-buttons li a:active {
+    background-color: #222;
+}
 
  .btn:focus,
  .btn:active,
