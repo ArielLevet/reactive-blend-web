@@ -252,7 +252,7 @@
  }
 
  .navbar-default .navbar-brand {
-     font-family: "Cabin Condensed", "Helvetica Neue", Helvetica, Arial, cursive;
+     font-family: "Jersey 10", "Cabin Condensed", Helvetica, Arial, cursive;
      font-weight: 400;
      color: #ffffff;
      display: flex;
@@ -400,7 +400,7 @@
  header .intro-text .intro-heading {
      margin-bottom: 25px;
      text-transform: none;
-     font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-family: "Jersey 10", "Cabin", Helvetica, Arial, sans-serif;
      font-style: normal;
      font-size: 54px;
      font-weight: 500;
@@ -425,7 +425,7 @@
      header .intro-text .intro-heading {
          margin-bottom: 50px;
          text-transform: none;
-         font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+         font-family: "Jersey 10", "Cabin", Helvetica, Arial, sans-serif;
          font-style: normal;
          /*acá*/
          font-size: 100px;
