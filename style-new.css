@@ -14,8 +14,8 @@
   * For details, see http://www.apache.org/licenses/LICENSE-2.0.
   */
  :root {
-     --primary-color: #c70050;
-     --hilight-color: #96003c;
+     --primary-color: #e65c73;
+     --hilight-color: #e84d67;
  }
 
 
@@ -67,7 +67,7 @@
  }
 
  .text-white {
-    color:#ffffff
+     color: #ffffff
  }
 
  .text-primary {
@@ -84,9 +84,9 @@
  }
 
  @media(min-width:768px) {
-    p {
-        font-size: 16px;
-    }
+     p {
+         font-size: 16px;
+     }
  }
 
  a,
@@ -235,10 +235,10 @@
  }
 
  .logo {
-     height: 37px;
+     height: 50px;
      /*Se ajusta en full*/
      margin-right: 12px;
-     margin-top: 5px;
+     margin-top: 0px;
      display: flex;
      justify-content: center;
      -webkit-transition: height .3s, margin-right .3s, margin-top .3s;
@@ -248,12 +248,14 @@
 
  .navbar-default {
      border-color: transparent;
-     background-color: #222;
+     background-color: #000000;
  }
 
  .navbar-default .navbar-brand {
      font-family: "Jersey 10", "Cabin Condensed", Helvetica, Arial, cursive;
+     font-size: 1.8em;
      font-weight: 400;
+     letter-spacing: 0.03em;
      color: #ffffff;
      display: flex;
      align-items: center;
@@ -321,20 +323,20 @@
  @media(min-width:768px) {
 
      .logo {
-         height: 51px;
+         height: 60px;
      }
 
      .navbar-default {
          padding: 10px 0;
          border: 0;
-         background-color: #1e1e1ea5;
+         background-color: #000000;
          -webkit-transition: all .3s;
          -moz-transition: all .3s;
          transition: all .3s;
      }
 
      .navbar-default .navbar-brand {
-         font-size: 2em;
+         font-size: 2.5em;
          font-weight: 400;
          -webkit-transition: all .3s;
          -moz-transition: all .3s;
@@ -346,12 +348,12 @@
      }
 
      .navbar-default.navbar-shrink {
-         padding: 7px 0;
-         background-color: #222;
+         padding: 4px 0;
+         background-color: #000000;
      }
 
      .navbar-default.navbar-shrink .logo {
-         height: 37px;
+         height: 50px;
          margin-right: 10px;
          margin-top: 3px;
          -webkit-transition: height .3s, margin-right .3s, margin-top .3s;
@@ -360,7 +362,7 @@
      }
 
      .navbar-default.navbar-shrink .navbar-brand {
-         font-size: 1.5em;
+         font-size: 2em;
          font-weight: 400;
      }
  }
@@ -822,33 +824,34 @@
  }
 
  section#contact .contact-text {
-    
-    margin-bottom: 10px;
-    text-transform: none;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: #fff;
-    font-style: normal;
+
+     margin-bottom: 10px;
+     text-transform: none;
+     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-size: 16px;
+     font-weight: 500;
+     color: #fff;
+     font-style: normal;
  }
 
  @media(min-width:767px) {
-    section#contact .contact-text {
-        font-size: 17px;;
-    }
-}
+     section#contact .contact-text {
+         font-size: 17px;
+         ;
+     }
+ }
 
  section#contact .text-muted {
-    color: #e3e3e3;
+     color: #e3e3e3;
  }
 
  .highlighted-mail {
-	background-color: #222;
-	color: var(--primary-color);
-    font-weight: 600;
-	padding: 1px 3px;
-	border-radius: 3px;
-    font-style: normal;
+     background-color: #222;
+     color: var(--primary-color);
+     font-weight: 600;
+     padding: 1px 3px;
+     border-radius: 3px;
+     font-style: normal;
  }
 
  section#contact .form-group {
@@ -951,15 +954,15 @@
  }
 
  section#contact ul.social-buttons li a {
-    margin-top: 20px;
-    background-color: var(--primary-color);
-}
+     margin-top: 20px;
+     background-color: var(--primary-color);
+ }
 
-section#contact ul.social-buttons li a:hover,
-section#contact ul.social-buttons li a:focus,
-section#contact ul.social-buttons li a:active {
-    background-color: #222;
-}
+ section#contact ul.social-buttons li a:hover,
+ section#contact ul.social-buttons li a:focus,
+ section#contact ul.social-buttons li a:active {
+     background-color: #222;
+ }
 
  .btn:focus,
  .btn:active,
@@ -1064,8 +1067,8 @@ section#contact ul.social-buttons li a:active {
  ;
 
  :root {
-     --primary-color: #c70050;
-     --hilight-color: #96003c;
+     --primary-color: #e65c73;
+     --hilight-color: #e84d67;
  }
 
  .btn-xl {
