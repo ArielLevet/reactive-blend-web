@@ -15,7 +15,7 @@ description: "Write an awesome description for your new site here. You can edit 
 people:
 - name: Ariel Aguilar
   pic: 1
-  position: "Sfx-Music / Programmer"
+  position: "Sfx-Music | Programmer"
   social:
   - title: x-twitter
     url: http://www.x.com/levetdev
@@ -24,9 +24,9 @@ people:
   - title: envelope
     url: mailto:ariel.bnd@gmail.com
 
-- name: Marrtín Ibarra
+- name: Martín Ibarra
   pic: 2
-  position: "2D-3D Artist / Programmer"
+  position: "2D-3D Artist | Programmer"
   social:
     - title: envelope
       url: mailto:martinibarrasm@hotmail.com

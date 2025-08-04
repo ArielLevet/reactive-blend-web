@@ -248,7 +248,7 @@
 
  .navbar-default {
      border-color: transparent;
-     background-color: #000000;
+     background-color: #181818;
  }
 
  .navbar-default .navbar-brand {
@@ -329,7 +329,7 @@
      .navbar-default {
          padding: 10px 0;
          border: 0;
-         background-color: #000000;
+         background-color: #181818;
          -webkit-transition: all .3s;
          -moz-transition: all .3s;
          transition: all .3s;
@@ -349,7 +349,7 @@
 
      .navbar-default.navbar-shrink {
          padding: 4px 0;
-         background-color: #000000;
+         background-color: #181818;
      }
 
      .navbar-default.navbar-shrink .logo {
