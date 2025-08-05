@@ -499,6 +499,12 @@
  }
 
 
+ .roadmap-img {
+     max-width: 100%;
+     height: auto;
+     margin-top: 6px;
+ }
+
  .news-img {
      max-width: 100%;
      height: auto;
