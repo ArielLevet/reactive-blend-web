@@ -119,6 +119,10 @@
      font-weight: 700;
  }
 
+ h3,.h3 {
+    font-size: 1.8em;
+}
+
  .img-centered {
      margin: 0 auto;
  }
@@ -237,7 +241,7 @@
  .logo {
      height: 50px;
      /*Se ajusta en full*/
-     margin-right: 12px;
+     margin-right: 8px;
      margin-top: 0px;
      display: flex;
      justify-content: center;
@@ -253,9 +257,10 @@
 
  .navbar-default .navbar-brand {
      text-transform: none;
-     font-family: "Montserrat", "Jersey 10", "Cabin Condensed", Helvetica, Arial, cursive;
-     font-size: 1.8em;
-     font-weight: 600;
+     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-size: 1.3em;
+     font-weight: 500;
+     padding: 18.5px 15px 18.5px;
      /*letter-spacing: 0.03em;*/
      color: #ffffff;
      display: flex;
@@ -325,6 +330,7 @@
 
      .logo {
          height: 60px;
+         margin-right: 12px;
      }
 
      .navbar-default {
@@ -337,8 +343,8 @@
      }
 
      .navbar-default .navbar-brand {
-         font-size: 2.5em;
-         font-weight: 600;
+         font-size: 2.1em;
+         font-weight: 500;
          -webkit-transition: all .3s;
          -moz-transition: all .3s;
          transition: all .3s;
@@ -354,9 +360,8 @@
      }
 
      .navbar-default.navbar-shrink .logo {
-         height: 50px;
+         height: 54px;
          margin-right: 10px;
-         margin-top: 3px;
          -webkit-transition: height .3s, margin-right .3s, margin-top .3s;
          -moz-transition: height .3s, margin-right .3s, margin-top .3s;
          transition: height .3s, margin-right .3s, margin-top .3s;
@@ -364,7 +369,7 @@
 
      .navbar-default.navbar-shrink .navbar-brand {
          font-size: 2em;
-         font-weight: 600;
+         font-weight: 500;
      }
  }
 
@@ -389,9 +394,9 @@
 
  header .intro-text .intro-lead-in {
      margin-bottom: 25px;
-     font-family: "Montserrat", "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
      font-style: italic;
-     font-size: 22px;
+     font-size: 1.4em;
      line-height: 22px;
      /*text-shadow: 
             2px 2px 4px rgba(0,0,0,0.8),
@@ -403,7 +408,7 @@
  header .intro-text .intro-heading {
      margin-bottom: 25px;
      text-transform: none;
-     font-family: "Montserrat", "Jersey 10", "Cabin", Helvetica, Arial, sans-serif;
+     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
      font-style: normal;
      font-size: 54px;
      font-weight: 700;
@@ -419,16 +424,16 @@
 
      header .intro-text .intro-lead-in {
          margin-bottom: 25px;
-         font-family: "Montserrat", "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+         font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
          font-style: italic;
-         font-size: 40px;
+         font-size: 2.2em;
          line-height: 40px;
      }
 
      header .intro-text .intro-heading {
          margin-bottom: 50px;
          text-transform: none;
-         font-family: "Montserrat", "Jersey 10", "Cabin", Helvetica, Arial, sans-serif;
+         font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
          font-style: normal;
          /*acá*/
          font-size: 100px;
@@ -444,13 +449,13 @@
  section h2.section-heading {
      margin-top: 0;
      margin-bottom: 15px;
-     font-size: 40px;
+     font-size: 2.3em;
  }
 
  section h3.section-subheading {
      margin-bottom: 75px;
      text-transform: none;
-     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
      font-size: 16px;
      font-style: italic;
      font-weight: 400;
@@ -580,7 +585,7 @@
 
  #portfolio .portfolio-item .portfolio-caption p {
      margin: 0;
-     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
      font-size: 16px;
      font-style: italic;
  }
@@ -1000,7 +1005,7 @@
 
  .portfolio-modal .modal-content p.item-intro {
      margin: 20px 0 30px;
-     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
      font-size: 16px;
      font-style: italic;
  }
