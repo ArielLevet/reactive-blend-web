@@ -119,9 +119,11 @@
      font-weight: 700;
  }
 
- h3,.h3 {
-    font-size: 1.8em;
-}
+ h3,
+ .h3 {
+     font-size: 1.8em;
+     margin-bottom: 26px;
+ }
 
  .img-centered {
      margin: 0 auto;
@@ -488,7 +490,7 @@
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
      gap: 10px;
-     padding: 20px;
+     padding: 0px;
      max-width: 800px;
      margin: auto;
  }
@@ -504,11 +506,11 @@
      transform: scale(1.05);
  }
 
-
  .roadmap-img {
      max-width: 100%;
      height: auto;
      margin-top: 6px;
+     margin-bottom: 6px;
  }
 
  .news-img {
