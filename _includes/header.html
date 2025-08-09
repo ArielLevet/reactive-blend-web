@@ -1,71 +1,72 @@
 <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <img src="{{ site.baseurl }}/img/icono.png" alt="Logo" class="logo">
-                    {{ site.title }}
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#games">GAMES</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#news">NEWS</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#studio">STUDIO</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">CONTACT</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="https://drive.google.com/drive/folders/1DhiQi9WnfQL3fxDp9xuCqcvPVwD4y_Hc?usp=sharing">PRESS KIT</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <img src="{{ site.baseurl }}/img/icono.png" alt="Logo" class="logo">
+            <!--{{ site.title }}-->
         </div>
-        <!-- /.container-fluid -->
-    </nav>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-heading" style="display: none;">Reactive Blend Studio</div>
-                <div class="intro-lead-in">Blending dreams. Crafting games.</div>
-                <div class="social-buttons">
-                    <ul class="list-inline social-buttons">
-                        {% for network in site.social %}
-                        <li><a href="{{ network.url }}">
-                            <i class="{% if network.title == 'envelope' %}fas{% else %}fab{% endif %} fa-{{ network.title }}">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#games">GAMES</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#news">NEWS</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#studio">STUDIO</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">CONTACT</a>
+                </li>
+                <li>
+                    <a class="page-scroll"
+                        href="https://drive.google.com/drive/folders/1DhiQi9WnfQL3fxDp9xuCqcvPVwD4y_Hc?usp=sharing">PRESS
+                        KIT</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-heading" style="display: none;">Reactive Blend Studio</div>
+            <div class="intro-lead-in">Blending dreams. Crafting games.</div>
+            <div class="social-buttons">
+                <ul class="list-inline social-buttons">
+                    {% for network in site.social %}
+                    <li><a href="{{ network.url }}">
+                            <i
+                                class="{% if network.title == 'envelope' %}fas{% else %}fab{% endif %} fa-{{ network.title }}">
                             </i>
                         </a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <a href="#games" class="page-scroll btn btn-xl" style="display: none;">More</a>
+                    {% endfor %}
+                </ul>
             </div>
+            <a href="#games" class="page-scroll btn btn-xl" style="display: none;">More</a>
         </div>
-    </header>
+    </div>
+</header>
 <!--
         {% for page in site.pages %}
           {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
         {% endfor %}
  -->
-
