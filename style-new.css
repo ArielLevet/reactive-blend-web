@@ -243,9 +243,10 @@
  .logo {
      height: 50px;
      /*Se ajusta en full*/
-     margin-right: 8px;
-     margin-top: 0px;
+     margin-left: 10px;
+     margin-top: 4px;
      display: flex;
+     align-items: center;
      justify-content: center;
      -webkit-transition: height .3s, margin-right .3s, margin-top .3s;
      -moz-transition: height .3s, margin-right .3s, margin-top .3s;
@@ -331,8 +332,9 @@
  @media(min-width:768px) {
 
      .logo {
-         height: 60px;
-         margin-right: 12px;
+         height: 64px;
+         margin-left: 0px;
+         margin-top: 0px;
      }
 
      .navbar-default {
@@ -362,8 +364,9 @@
      }
 
      .navbar-default.navbar-shrink .logo {
-         height: 54px;
-         margin-right: 10px;
+         height: 56px;
+         margin-left: 0px;
+         margin-top: 0px;
          -webkit-transition: height .3s, margin-right .3s, margin-top .3s;
          -moz-transition: height .3s, margin-right .3s, margin-top .3s;
          transition: height .3s, margin-right .3s, margin-top .3s;
