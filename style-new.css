@@ -383,7 +383,7 @@
      color: #fff;
      background-attachment: scroll;
      background-color: #111111;
-     background-image: url('../img/trianglespattern.webp');
+     background-image: url('../img/solidGreyBg.webp');
      background-position: center center;
      background-repeat: none;
      -webkit-background-size: cover;
@@ -393,15 +393,17 @@
  }
 
  header .intro-text {
-     padding-top: 100px;
-     padding-bottom: 50px;
+     padding-top: 120px;
+     padding-bottom: 40px;
  }
 
  header .intro-text .intro-lead-in {
      margin-bottom: 25px;
      font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+     color: var(--primary-color);
      font-style: italic;
      font-size: 1.4em;
+     font-weight: 400;
      line-height: 22px;
      /*text-shadow: 
             2px 2px 4px rgba(0,0,0,0.8),
@@ -422,7 +424,7 @@
 
  @media(min-width:768px) {
      header .intro-text {
-         padding-top: 250px;
+         padding-top: 160px;
          /*450 px para img de test*/
          padding-bottom: 50px;
      }
