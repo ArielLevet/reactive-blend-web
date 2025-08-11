@@ -126,6 +126,7 @@
  h3,
  .h3 {
      font-size: 1.8em;
+     margin-top: 26px;
      margin-bottom: 26px;
  }
 
@@ -453,6 +454,10 @@
          font-weight: 700;
          line-height: 75px;
      }
+ }
+
+ .page-scroll {
+     text-align: center;
  }
 
  section {
@@ -882,7 +887,7 @@
  .highlighted-mail {
      background-color: #222;
      color: var(--primary-color);
-     font-weight: 600;
+     font-weight: 500;
      padding: 1px 3px;
      border-radius: 3px;
      font-style: normal;
