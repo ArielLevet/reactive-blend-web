@@ -309,6 +309,8 @@
      font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
      font-weight: 400;
      /*letter-spacing: 1px;*/
+     padding-left: 12px;
+     padding-right: 12px;
      color: #fff;
      -webkit-transition: all ease .35s;
      -moz-transition: all ease .35s;
