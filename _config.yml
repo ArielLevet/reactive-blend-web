@@ -39,8 +39,8 @@ social:
     url: http://www.tiktok.com/@reactiveblend
   - title: instagram 
     url: http://www.instagram.com/reactiveblend
-  - title: envelope
-    url: mailto:contact@reactiveblend.com
+  #- title: envelope
+  #  url: mailto:contact@reactiveblend.com
 
 # Postal address (add as many lines as necessary)
 address:
