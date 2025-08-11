@@ -37,6 +37,19 @@
                         href="https://drive.google.com/drive/folders/1DhiQi9WnfQL3fxDp9xuCqcvPVwD4y_Hc?usp=sharing">PRESS
                         KIT</a>
                 </li>
+                <li>
+                    <div class="social-buttons">
+                        <ul class="list-inline social-buttons">
+                            {% for network in site.social %}
+                            <li><a href="{{ network.url }}">
+                                    <i
+                                        class="{% if network.title == 'envelope' %}fas{% else %}fab{% endif %} fa-{{ network.title }}">
+                                    </i>
+                                </a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -45,6 +58,7 @@
 </nav>
 
 <!-- Header -->
+<!--
 <header>
     <div class="container">
         <div class="intro-text">
@@ -63,3 +77,4 @@
         </div>
     </div>
 </header>
+ -->
