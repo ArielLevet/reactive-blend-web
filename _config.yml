@@ -3,24 +3,23 @@ url: "https://reactiveblend.com"
 
 # Configuración de desarrollo
 dev_password: "pass1983"  # Cambiar esto
-under_construction: true      # Cambiar a false cuando quieras desactivarlo
+under_construction: false      # Cambiar a false cuando quieras desactivarlo
 
 # Site settings
 title: Reactive Blend Studio
 email: contact@reactiveblend.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-
+description: "Reactive Blend: Video game studio fusing retro aesthetics, modern mechanics, and creative storytelling with an indie spirit."
 
 # Team names, titles and social links
 people:
 - name: Ariel Aguilar
   pic: 1
-  position: "Sfx-Music | Programmer"
+  position: "Music-sfx | Programmer"
   social:
   - title: x-twitter
     url: http://www.x.com/levetdev
   - title: instagram 
-    url: http://www.instagram.com/ariel.bnd
+    url: http://www.instagram.com/levetdev
   - title: envelope
     url: mailto:ariel.bnd@gmail.com
 
@@ -28,6 +27,8 @@ people:
   pic: 2
   position: "2D-3D Artist | Programmer"
   social:
+    - title: x-twitter
+      url: https://x.com/ibarracm_
     - title: envelope
       url: mailto:martinibarrasm@hotmail.com
 
