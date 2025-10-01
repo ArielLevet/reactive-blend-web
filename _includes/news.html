@@ -4,27 +4,29 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">LATEST NEWS</h2>
-                <!--
-                <h3 class="section-subheading text-muted">Reactive news!</h3>
-                -->
             </div>
         </div>
-        <div id="news-container" class="row" style="text-align: justify;">
-            <!-- Aquí se insertarán las noticias dinámicamente -->
+
+        <!-- Primer bloque de noticias -->
+        <div id="news-block-1" class="row" style="text-align: justify;">
+            <!-- Aquí se insertarán las primeras tres noticias dinámicamente -->
+        </div>
+
+        <!-- Segundo bloque de noticias -->
+        <div id="news-block-2" class="row" style="text-align: justify; margin-top: 50px;">
+            <!-- Aquí se insertarán las siguientes dos noticias dinámicamente -->
         </div>
     </div>
 </section>
 
 <script>
-    // JSON con las noticias integrado directamente en el HTML
     const news = [
         {
             "date": "29 SEPTEMBER 2025",
             "title": "TAKING 3D SHAPE",
             "image": "img/news/news005.png",
             "text": "The world of Pet.exe is beginning to take shape in three dimensions! We’ve started integrating our first 3D models, giving the game its first real sense of depth and form. Alongside this, we’re bringing sounds into three-dimensional space, so audio now surrounds you as you explore, and we’re implementing 3D player controls for the first time, allowing full interaction with the hybrid world. Each of these steps brings the universe closer to life and we can’t wait to see how players will experience it!"
-        }
-        ,
+        },
         {
             "date": "28 AUGUST 2025",
             "title": "MOTION AWAKENS",
@@ -51,26 +53,32 @@
         }
     ];
 
-    const container = document.getElementById("news-container");
+    const block1 = document.getElementById("news-block-1");
+    const block2 = document.getElementById("news-block-2");
 
-    // Agrupar noticias de 3 en 3 para filas
-    for (let i = 0; i < news.length; i += 3) {
-        // Crear fila
-        const row = document.createElement("div");
-        row.className = "row mb-4"; // mb-5 para separar filas
-        // Tomar máximo 3 noticias para esta fila
-        const newsSlice = news.slice(i, i + 3);
-        newsSlice.forEach(item => {
-            const col = document.createElement("div");
-            col.className = "col-md-4";
-            col.innerHTML = `
-            <h4>${item.date}</h4>
-            <h3 class="subheading">${item.title}</h3>
-            <img src="${item.image}" alt="${item.title}" class="news-img mb-3">
-            <p class="news-text text-muted">${item.text}</p>
+    // Primer bloque:
+    news.slice(0, 3).forEach(item => {
+        const newsHTML = `
+            <div class="col-md-4">
+                <h4>${item.date}</h4>
+                <h3 class="subheading">${item.title}</h3>
+                <img src="${item.image}" alt="${item.title}" class="news-img mb-3">
+                <p class="news-text text-muted">${item.text}</p>
+            </div>
         `;
-            row.appendChild(col);
-        });
-        container.appendChild(row);
-    }
+        block1.innerHTML += newsHTML;
+    });
+
+    // Segundo bloque:
+    news.slice(3).forEach(item => {
+        const newsHTML = `
+            <div class="col-md-4">
+                <h4>${item.date}</h4>
+                <h3 class="subheading">${item.title}</h3>
+                <img src="${item.image}" alt="${item.title}" class="news-img mb-3">
+                <p class="news-text text-muted">${item.text}</p>
+            </div>
+        `;
+        block2.innerHTML += newsHTML;
+    });
 </script>
