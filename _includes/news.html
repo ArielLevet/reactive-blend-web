@@ -9,7 +9,7 @@
                 -->
             </div>
         </div>
-        <div id="news-container" class="row">
+        <div id="news-container" class="row" style="text-align: justify;">
             <!-- Aquí se insertarán las noticias dinámicamente -->
         </div>
     </div>
@@ -18,6 +18,13 @@
 <script>
     // JSON con las noticias integrado directamente en el HTML
     const news = [
+        {
+            "date": "29 SEPTEMBER 2025",
+            "title": "TAKING 3D SHAPE",
+            "image": "img/news/news005.png",
+            "text": "The world of Pet.exe is beginning to take shape in three dimensions! We’ve started integrating our first 3D models, giving the game its first real sense of depth and form. Alongside this, we’re bringing sounds into three-dimensional space, so audio now surrounds you as you explore, and we’re implementing 3D player controls for the first time, allowing full interaction with the hybrid world. Each of these steps brings the universe closer to life and we can’t wait to see how players will experience it!"
+        }
+        ,
         {
             "date": "28 AUGUST 2025",
             "title": "MOTION AWAKENS",
@@ -31,30 +38,39 @@
             "text": "We’re excited to reveal the very first glimpse of Pet.exe’s 2D phase — the initial visual and musical elements that bring our creative experiment to life. To share this exciting milestone, we’re launching our social channels and inviting players and curious minds alike to follow the unfolding of the hybrid horror universe, pixel by pixel, note by note."
         },
         {
-            "date": "MAY 2025",
+            "date": "7 MAY 2025",
             "title": "FIRST FORMULA: READY!",
             "image": "img/news/news002.png",
             "text": "Our first creation is coming to life! We’ve successfully completed the first stage of our development: the game design for Pet.exe is now defined. This hybrid 2D-3D horror game, where a seemingly cute companion slowly reveals its twisted nature, is shaping up to challenge players with suspenseful strategy and emotional depth. The core mechanics and narrative are now reacting together, setting the stage for what’s next. The formula is taking shape, and we’re hard at work refining it every day."
-        }/*,
+        },
         {
-            "date": "MARCH 2025",
+            "date": "12 MARCH 2025",
             "title": "EXPERIMENT BEGINS",
             "image": "img/news/news003.png",
             "text": "Today marks the start of a bold new creative experiment: the birth of our studio. We, Martín and Ariel, joined forces to spark a reaction of ideas. We’re setting out to test a formula that blends genres, fuses aesthetics, and distills the delightful madness of our conversations into something players will experience and enjoy. This is the first step in a chain reaction we’re eager to see unfold."
-        }*/
+        }
     ];
 
-    // Insertar las noticias en el DOM
     const container = document.getElementById("news-container");
-    news.forEach(item => {
-        const newsHTML = `
-		<div class="col-md-4">
-			<h4>${item.date}</h4>
-			<h3 class="subheading">${item.title}</h3>
-			<img src="${item.image}" alt="${item.title}" class="news-img mb-3">
-			<p class="news-text text-muted">${item.text}</p>
-		</div>
-	`;
-        container.innerHTML += newsHTML;
-    });
+
+    // Agrupar noticias de 3 en 3 para filas
+    for (let i = 0; i < news.length; i += 3) {
+        // Crear fila
+        const row = document.createElement("div");
+        row.className = "row mb-4"; // mb-5 para separar filas
+        // Tomar máximo 3 noticias para esta fila
+        const newsSlice = news.slice(i, i + 3);
+        newsSlice.forEach(item => {
+            const col = document.createElement("div");
+            col.className = "col-md-4";
+            col.innerHTML = `
+            <h4>${item.date}</h4>
+            <h3 class="subheading">${item.title}</h3>
+            <img src="${item.image}" alt="${item.title}" class="news-img mb-3">
+            <p class="news-text text-muted">${item.text}</p>
+        `;
+            row.appendChild(col);
+        });
+        container.appendChild(row);
+    }
 </script>
